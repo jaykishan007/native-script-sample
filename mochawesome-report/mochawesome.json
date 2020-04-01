@@ -1,0 +1,179 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-03-27T10:24:01.662Z",
+    "end": "2020-03-27T10:24:18.203Z",
+    "duration": 16541,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "333982bb-d3b2-4b2d-a02a-412cda6583a0",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [
+      {
+        "title": "\"before all\" hook: start server",
+        "fullTitle": "\"before all\" hook: start server",
+        "timedOut": false,
+        "duration": 3629,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "context": "[\n  \"on_server_started\",\n  \"./on_server_started.png\"\n]",
+        "code": "return __awaiter(this, void 0, void 0, function* () {\n    nativescript_dev_appium_1.nsCapabilities.testReporter.context = this;\n    yield nativescript_dev_appium_1.startServer();\n});",
+        "err": {},
+        "isRoot": true,
+        "uuid": "94501dda-40a8-4e75-8847-72af3e4f9fbd",
+        "isHook": true,
+        "skipped": false
+      }
+    ],
+    "afterHooks": [
+      {
+        "title": "\"after all\" hook: stop server",
+        "fullTitle": "\"after all\" hook: stop server",
+        "timedOut": false,
+        "duration": 4071,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield nativescript_dev_appium_1.stopServer();\n});",
+        "err": {},
+        "isRoot": true,
+        "uuid": "5c9f9cab-092d-48dc-8145-dc071e155a12",
+        "isHook": true,
+        "skipped": false
+      }
+    ],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "fff5ea3b-5fe3-4625-9458-5c3714d302f2",
+        "title": "sample scenario",
+        "fullFile": "/Users/mac/Desktop/hello/e2e/sample.e2e-spec.js",
+        "file": "/e2e/sample.e2e-spec.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "sample scenario \"before all\" hook",
+            "timedOut": false,
+            "duration": 7191,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "context": "[\n  \"appium_driver_started\",\n  \"./appium_driver_started.png\"\n]",
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    nativescript_dev_appium_1.nsCapabilities.testReporter.context = this;\n    driver = yield nativescript_dev_appium_1.createDriver();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "eba4106f-c755-4f62-861e-4e74ff845af9",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook",
+            "fullTitle": "sample scenario \"after all\" hook",
+            "timedOut": false,
+            "duration": 1339,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "context": "[\n  \"appium_driver_quit\",\n  \"./appium_driver_quit.png\",\n  \"on_server_stopped\",\n  \"./on_server_stopped.png\"\n]",
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield driver.quit();\n    console.log(\"Quit driver!\");\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "32aa8643-3d86-4374-a235-f0905a0e991e",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "sample scenario \"after each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    if (this.currentTest.state === \"failed\") {\n        yield driver.logTestArtifacts(this.currentTest.title);\n    }\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "c3b2cdce-65bc-46eb-80a2-34f44cfd9e16",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "should find an element by text",
+            "fullTitle": "sample scenario should find an element by text",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    // const btnTap = await driver.findElementByAutomationText(\"TAP\");\n    // await btnTap.click();\n    // const message = \" taps left\";\n    // const lblMessage = await driver.findElementByText(message, SearchOptions.contains);\n    // assert.equal(await lblMessage.text(), \"41\" + message);\n    // Image verification\n    // const screen = await driver.compareScreen(\"hello-world-41\");\n    // assert.isTrue(screen);\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a97d7ce2-6d32-40b0-b897-a236c9b510f7",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "should find an element by type",
+            "fullTitle": "sample scenario should find an element by type",
+            "timedOut": false,
+            "duration": 301,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    // const btnTap = await driver.findElementByClassName(driver.locators.button);\n    // await btnTap.click();\n    // const message = \" taps left\";\n    // const lblMessage = await driver.findElementByText(message, SearchOptions.contains);\n    // assert.equal(await lblMessage.text(), \"40\" + message);\n    let el1 = yield driver.findElementByAccessibilityId(\"Hello_World\");\n    yield el1.click();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0b4d6638-2e1c-4f1e-9a9f-2ecfceaf1026",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "a97d7ce2-6d32-40b0-b897-a236c9b510f7",
+          "0b4d6638-2e1c-4f1e-9a9f-2ecfceaf1026"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 301,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 999999
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 999999
+  },
+  "copyrightYear": 2020
+}
