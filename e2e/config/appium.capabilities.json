@@ -118,5 +118,24 @@
         "noReset": false,
         "fullReset": false,
         "app": ""
+    },
+    "kobiton_ios": {
+        "platformName": "Android",
+        "deviceName": "*",
+        "platformVersion": "*",
+        "newCommandTimeout": 720,
+        "app": "kobiton-store:45141",
+        "appPackage": "io.appium.android.apis",
+        "appActivity": ".ApiDemos"
+    },
+    "kobiton_android": {
+        "platformName": "Android",
+        "deviceName": "*",
+        "platformVersion": "*",
+        "newCommandTimeout": 720,
+        "app": "kobiton-store:45141",
+        "appPackage": "io.appium.android.apis",
+        "appActivity": ".ApiDemos",
+        "automationName": "UIAutomator2"
     }
 }
