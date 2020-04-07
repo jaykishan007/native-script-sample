@@ -16,9 +16,4 @@ nsCapabilities.testReporter = testReporterContext;
 
 before("start server", async function () {
     nsCapabilities.testReporter.context = this;
-    await startServer();
-});
-
-after("stop server", async function () {
-    await stopServer();
 });
