@@ -36,7 +36,7 @@
     "@types/mocha": "~5.2.5",
     "@types/node": "~10.12.18",
     "chai": "~4.1.2",
-    "karma": "4.4.1",
+    "karma": "6.3.14",
     "karma-jasmine": "3.1.1",
     "karma-nativescript-launcher": "0.4.0",
     "karma-webpack": "3.0.5",
